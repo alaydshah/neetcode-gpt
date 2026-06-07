@@ -20,11 +20,11 @@ class Solution:
 
             exp_z = np.exp(-z)
 
-            out = 1 / (1 + exp_z)
+            out = 1.0 / (1.0 + exp_z)
 
         else:
 
-            out = float(max(0, z))
+            out = np.maximum(0, z)
         
         return round(out, 5)
 
